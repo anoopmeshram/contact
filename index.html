@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-6 text-center">
+    <h1 class="text-3xl font-bold">Get in Touch</h1>
+    <p class="text-gray-600 mt-2">We’d love to hear from you — fill out the form below.</p>
+  </header>
+
+  <!-- Contact Form Section -->
+  <section class="max-w-lg mx-auto mt-10 bg-white p-8 rounded-2xl shadow-lg">
+    <form 
+      action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse"
+      method="POST"
+      target="_blank"
+      class="space-y-6"
+    >
+      <div>
+        <label class="block text-sm font-medium">Full Name</label>
+        <input name="entry.1111111111" type="text" required 
+               class="mt-1 w-full rounded-lg border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Email</label>
+        <input name="entry.2222222222" type="email" required
+               class="mt-1 w-full rounded-lg border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Message</label>
+        <textarea name="entry.3333333333" rows="4" required
+                  class="mt-1 w-full rounded-lg border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
+      </div>
+
+      <button 
+        type="submit"
+        class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
+      >
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 mt-10 mb-6">
+    <p>© 2025 Your Company. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
